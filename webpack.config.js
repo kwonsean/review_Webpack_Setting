@@ -8,7 +8,8 @@ module.exports = (env, options) => {
       // 두개 모두 생략 가능하다. 
       // path:'', 
       // filename:''
-      publicPath: '/'
+      publicPath: '/',
+      clean: true;
     },
     plugins:[
       new HtmlWebpackPlugin({
