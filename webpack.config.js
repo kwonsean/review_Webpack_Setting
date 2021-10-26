@@ -1,5 +1,6 @@
 //node.js환경이기 때문에 module.exports, require를 이용한다.
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = (env, options) => { 
   return{
@@ -14,6 +15,11 @@ module.exports = (env, options) => {
     plugins:[
       new HtmlWebpackPlugin({
         template: './src/index.html' // 가져올 html 경로
+      }),
+      new CopyPlugin({
+        patterns: [
+          {from: 'static'}
+        ]
       })
     ]
   }
