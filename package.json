@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/kwonsean/review_Webpack_Setting/issues"
   },
-  "homepage": "https://github.com/kwonsean/review_Webpack_Setting#readme"
+  "homepage": "https://github.com/kwonsean/review_Webpack_Setting#readme",
+  "devDependencies": {
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  }
 }
