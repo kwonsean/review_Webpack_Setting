@@ -39,6 +39,11 @@ module.exports = (env, options) => {
           {from: 'static'}
         ]
       })
-    ]
+    ],
+    devServer: {
+      port: 1234, // 포트번호를 설정 합니다.
+      open: true, // 서버가 열리면 바로 브라우저가 자동으로 실행됩니다. 
+      historyApiFallback: true // 아직 이부분은 이해 못함.
+    }
   }
 }  
