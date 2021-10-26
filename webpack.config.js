@@ -9,7 +9,7 @@ module.exports = (env, options) => {
       // path:'', 
       // filename:''
       publicPath: '/',
-      clean: true;
+      clean: true
     },
     plugins:[
       new HtmlWebpackPlugin({
