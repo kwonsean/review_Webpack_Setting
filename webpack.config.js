@@ -12,6 +12,15 @@ module.exports = (env, options) => {
       publicPath: '/',
       clean: true
     },
+    module:{
+      rules:[
+        {
+          test: /\.js$/,  // 정규식으로 js파일을 찾는다.
+          exclude: /node_modules/, // node_modules폴더에 있는 js파일은 건드리지 않는다. 
+          use: 'babel-loader' // 찾은 js 파일을 바벨 로더를 이용하여 바벨을 돌린다. 
+        }
+      ]
+    },
     plugins:[
       new HtmlWebpackPlugin({
         template: './src/index.html' // 가져올 html 경로
