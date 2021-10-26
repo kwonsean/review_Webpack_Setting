@@ -1,3 +1,4 @@
+import './scss/main.scss'
 const test = 'test'
 console.log(test)
 
