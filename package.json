@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "devBuild": "webpack --mode development"
+    "devBuild": "webpack --mode development",
+    "babel": "babel ./src/main.js --out-dir dist"
   },
   "repository": {
     "type": "git",
